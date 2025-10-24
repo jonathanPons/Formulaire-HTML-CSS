@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulaire HTML/CSS</title>
+    <meta name="description" content="Realisation d'un formulaire, html, CSS" />
+  </head>
+  <body>
+    <form action="Formulaire-contact" class="contact-form">
+      <div class="item-form">
+        <label for="nom"></label>
+        Ton nom:
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          aria-label="Ecris ton nom complet"
+        />
+      </div>
+      <div class="item-form">
+        <label for="email">
+          Ton Email:
+          <input
+            required
+            type="email"
+            id="email"
+            name="email"
+            aria-label="Ecris ton email complet"
+        /></label>
+      </div>
+
+      <div class="item-form">
+        <label for="message"> Ecris un message:</label>
+        <textarea
+          name="texte"
+          id="message"
+          required
+          aria-label="Ecris un texte de 10 caractères minimum"
+          minlength="10"
+        ></textarea>
+      </div>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </body>
+</html>
