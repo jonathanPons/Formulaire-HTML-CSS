@@ -22,7 +22,8 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
-input textarea {
+input,
+textarea {
   border-radius: 5px;
   padding: 10px;
   border: 1px solid grey;
@@ -40,6 +41,7 @@ input:invalid {
   border: 1px solid red;
   border-radius: 5px;
 }
+
 textarea:invalid {
   border: 1px solid red;
   border-radius: 5px;
@@ -63,7 +65,7 @@ button {
   border-radius: 5px;
 }
 button:hover {
-  color: #1e40af;
+  background-color: #2563eb;
 }
 @media (width <= 600px) {
   body {
@@ -74,7 +76,7 @@ button:hover {
   .contact-form {
     max-width: 80%;
     width: 300px;
-    background-color: white;
+
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 5px;
